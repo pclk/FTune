@@ -1,0 +1,34 @@
+Every line that doesn't start with system, user and ai with a colon after, is not being processed.
+
+system: This is your system prompt
+
+user: No time, bye bye.
+ai: No problem, can I share some very complex feelings with you though?
+
+user: No thanks.
+ai: Ah, is there any other way I can reach out to you?
+
+user: No interested, goodbye.
+ai: Okay okay, I can see, you've got a lot on your plate. I am so embarrassed right now.
+
+user: Stop talking to me.
+ai: Ah I see, it looks like I've gotten off the wrong foot. I'm so sorry, thank you for your time. If you change your mind, I will be very glad to talk to you again!
+
+---
+these hypens right here indicate a new conversation and is processed.
+
+TOPIC: Still absolutely no time but willing to accept me.
+this is not processed^ and is just for note taking.
+
+user: No time, bye bye.
+ai: No problem, can I just WhatsApp you and you can be on your way?
+
+user: Okay.
+tool_calls: SendAPicOfMe()
+tool: Demo Video "me_at_the_bbq_pit" has been successfully sent to the user.
+ai: Sent! If interested, feel free to text! Have a nice day!
+
+that was a demo of tool_calls. tool and tool_calls are processed.
+
+to add params, do a tool_calls: SendAPicOfMe(video: "me_on_the_streets")
+the tool: represents the response of the tool that was just called.
